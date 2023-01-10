@@ -2,6 +2,10 @@
 
 using namespace std;
 
+#define tp template
+tp <typename SKOT>
+void mySwap (SKOT &x, SKOT &y);
+
 int main(){
 	int x, y;
 	string a, b;
@@ -28,5 +32,13 @@ int main(){
 	cout << "p = " << p << ", q = " << q << "\n";
 
 	return 0;
+}
+
+tp <typename SKOT>
+void mySwap(SKOT &x, SKOT &y)
+{
+	SKOT a =x, b = y;
+	x = b;
+	y = a;	
 }
 
